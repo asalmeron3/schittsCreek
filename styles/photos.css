@@ -1,0 +1,29 @@
+.character-face {
+  border-radius: 100px;
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+}
+
+.speech-container {
+  height: 125px;
+  width: 125px;
+  position: absolute;
+  left: 75%;
+  bottom: 75%;
+  z-index: 1;
+  display: none;
+}
+
+.speech-bubble {
+  width: 125%;
+  filter: invert(1);
+}
+
+.quote {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  color: lightblue;
+  text-align: center;
+}

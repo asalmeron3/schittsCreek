@@ -1,0 +1,58 @@
+body {
+  height: 98vh;
+  background-image: url("../images/creekLogo.jpg");
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.character-box {
+  text-align: center;
+  position: relative;
+  height: 140px;
+}
+
+.character-board {
+  display: grid;
+  height: 99%;
+
+}
+
+.spacing-box {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .character-board {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .character-board {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .character-board {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 4fr);
+  }
+
+  .spacing-box {
+    display: inline;
+  }
+
+}
